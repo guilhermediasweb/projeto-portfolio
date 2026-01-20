@@ -126,7 +126,7 @@ article{
 
 article h2{
   color: var(--destaque);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #skill-container{
@@ -176,6 +176,36 @@ article h2{
   border-radius: 4px;
 }
 
+#formacao-container{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+#formacao-container .curso{
+  background-color: var(--fundo-principal);
+  border-radius: 8px;
+  border-left: 3px solid var(--destaque-inverso);
+  padding-left: 15px;
+  transition: border-width 0.5s, border-color 0.5s ease-in-out;
+}
+
+#formacao-container .curso:hover{
+  border-left-width: 15px;
+  border-color: var(--destaque);
+  cursor: pointer;
+}
+
+#formacao-container .periodo{
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#formacao-container .instituicao{
+  font-weight: 1.10em;
+  color: var(--destaque-inverso);
+}
 @media screen and (min-width: 768px) {
   #skill-container{
     grid-template-columns: 1fr 1fr;
